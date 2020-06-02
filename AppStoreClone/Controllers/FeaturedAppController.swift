@@ -30,7 +30,7 @@ class FeaturedAppController: UICollectionViewController, UICollectionViewDelegat
             case .success(let featuredApp):
                 self.featureApp = featuredApp
                 self.featureApp?.categories?.swapAt(2, 0)
-                self.featureApp?.categories?.swapAt(1, 3)
+                self.featureApp?.categories?.swapAt(1, 3) // To display nicer content
                 
                  DispatchQueue.main.async {
                     self.collectionView.reloadData()
