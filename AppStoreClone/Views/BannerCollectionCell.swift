@@ -15,20 +15,20 @@ class BannerCollectionCell: UICollectionViewCell{
     var bannerApps: AppCategory?
     
     override init(frame: CGRect) {
-           super.init(frame: frame)
-           setupViews()
+        super.init(frame: frame)
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
-          fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) has not been implemented")
     }
-       
-   func setupViews() {
+    
+    func setupViews() {
         collectionView.delegate = self
         collectionView.dataSource = self
-    
+        
         collectionView.register(BannerCell.self, forCellWithReuseIdentifier: bannerCell)
-    
+        
         collectionView.backgroundColor = .white
         
         addSubview(collectionView)
@@ -51,7 +51,7 @@ class BannerCollectionCell: UICollectionViewCell{
         return collectionView
     }()
     
-
+    
 }
 
 extension BannerCollectionCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

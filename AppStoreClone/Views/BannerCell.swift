@@ -37,22 +37,22 @@ class BannerCell: UICollectionViewCell {
     }()
     
     let titleLabel: UILabel = {
-         let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "HomeSpaces"
         label.font = UIFont.preferredFont(forTextStyle: .title2)
         label.textColor = .label
-         return label
-     }()
+        return label
+    }()
     
     let subtitleLabel: UILabel = {
-         let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "A Wild West makeover, yee-haw"
         label.font = UIFont.preferredFont(forTextStyle: .title2)
         label.textColor = .secondaryLabel
-         return label
-     }()
+        return label
+    }()
     
     let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -62,15 +62,15 @@ class BannerCell: UICollectionViewCell {
     }()
     
     let bannerImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
-             imageView.layer.borderWidth = 0.5
-       imageView.contentMode = .scaleAspectFill
+        imageView.layer.borderWidth = 0.5
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
         imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-       return imageView
+        return imageView
     }()
     
     func setupViews() {

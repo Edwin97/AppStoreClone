@@ -33,7 +33,7 @@ class BaseCollectionCell: UICollectionViewCell {
     }
     
     let categoryLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Great Games With Special Offers"
         label.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 18, weight: .bold))
@@ -85,7 +85,7 @@ extension BaseCollectionCell: UICollectionViewDataSource, UICollectionViewDelega
         cell.app = appCategory?.apps?[indexPath.item]
         return cell
     }
-        
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }

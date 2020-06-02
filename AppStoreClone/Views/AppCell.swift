@@ -32,15 +32,15 @@ class AppCell: UICollectionViewCell {
     }
     
     let appImageView: UIImageView = {
-       let imageView = UIImageView()
-       imageView.contentMode = .scaleAspectFill
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: "angrybirdsspace")
         imageView.layer.cornerRadius = 16
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.heightAnchor.constraint(equalToConstant: 80).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 80).isActive = true
-       return imageView
+        return imageView
     }()
     
     let nameLabel: UILabel = {
@@ -65,19 +65,18 @@ class AppCell: UICollectionViewCell {
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
         button.translatesAutoresizingMaskIntoConstraints = false
-              button.widthAnchor.constraint(equalToConstant: 70).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 70).isActive = true
         return button
     }()
     
     let verticalStackView: UIStackView = {
-       let stackView = UIStackView()
+        let stackView = UIStackView()
         stackView.axis = .vertical
-//        stackView.spacing = 5
         return stackView
     }()
     
     let horizontalStackView: UIStackView = {
-       let stackView = UIStackView()
+        let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.spacing = 10
         stackView.alignment = .center
@@ -98,7 +97,7 @@ class AppCell: UICollectionViewCell {
         addSubview(horizontalStackView)
         
         NSLayoutConstraint.activate([
-        
+            
             horizontalStackView.topAnchor.constraint(equalTo: topAnchor),
             horizontalStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             horizontalStackView.leftAnchor.constraint(equalTo: leftAnchor),

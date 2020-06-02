@@ -28,14 +28,14 @@ class FeaturedCell: UICollectionViewCell {
     }
     
     let bannerImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
-             imageView.layer.borderWidth = 0.5
-       imageView.contentMode = .scaleAspectFill
+        imageView.layer.borderWidth = 0.5
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
-       return imageView
+        return imageView
     }()
     
     func setupViews() {

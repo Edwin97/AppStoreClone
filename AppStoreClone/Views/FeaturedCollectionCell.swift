@@ -13,7 +13,7 @@ class FeaturedCollectionCell: BaseCollectionCell{
     let featuredCell = "featuredCell"
     
     var category: AppCategory?
-       
+    
     override func setupViews() {
         
         super.setupViews()
